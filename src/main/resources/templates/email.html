@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <title></title>
+    <style>
+        table,
+        td,
+        div,
+        h1,
+        p {
+            font-family: "Roboto Flex", sans-serif !important;
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0">
+<table
+        role="presentation"
+        style="
+        width: 100%;
+        border-collapse: collapse;
+        border: 0;
+        border-spacing: 0;
+        background: #ffffff;
+      "
+>
+    <tr>
+        <td align="center" style="padding: 0">
+            <table
+                    role="presentation"
+                    style="
+              width: 602px;
+              border-collapse: collapse;
+              border-spacing: 0;
+              text-align: left;
+            "
+            >
+                <tr>
+                    <td
+                            align="center"
+                            style="padding: 30px 0 30px 0; background: #f4f4f4"
+                    >
+                        <img
+                                src="https://res.cloudinary.com/dgfoaqncq/image/upload/v1731742776/logo_molog0.png"
+                                alt=""
+                                width="150"
+                                style="height: auto; display: block"
+                        />
+                        <br />
+                        <strong
+                                style="font-weight: bold; font-size: 25px; color: #153643"
+                        >ROYAL JEWELRY</strong
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 36px 30px 42px 30px">
+                        <table
+                                role="presentation"
+                                style="
+                    width: 100%;
+                    border-collapse: collapse;
+                    border: 0;
+                    border-spacing: 0;
+                  "
+                        >
+                            <tr>
+                                <td style="color: #da8f2e">
+                                    <h1 style="font-size: 20px; margin: 0 0 20px 0" th:text="${title}">
+
+                                    </h1>
+                                    <div style="font-size: 15px"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0 0 25px 0; color: #153643">
+                                    <h1 style="font-size: 17px; margin: 0 0 20px 0">
+                                        Dear Valued Customer,
+                                    </h1>
+                                    <div style="font-size: 15px" th:utext="${body}"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 30px; background: #242f56">
+                        <table
+                                role="presentation"
+                                style="
+                    width: 100%;
+                    border-collapse: collapse;
+                    border: 0;
+                    border-spacing: 0;
+                    font-size: 9px;
+                  "
+                        >
+                            <tr>
+                                <td style="padding: 0; width: 50%" align="left">
+                                    <div
+                                            style="color: white; font-size: 14px; line-height: 1.6"
+                                    >
+                                        <div>
+                                            Email:
+                                            <a
+                                                    href="mailto:support@royaljewelry.com"
+                                                    style="color: #ededed; text-decoration: none"
+                                            >support@royaljewelry.com</a
+                                            >
+                                        </div>
+                                        <div>
+                                            Phone:
+                                            <a
+                                                    href="tel:+84348143004"
+                                                    style="color: #ededed; text-decoration: none"
+                                            >+84 348 143 004</a
+                                            >
+                                        </div>
+                                        <div>
+                                            Website:
+                                            <a
+                                                    href="https://royaljewelry.com"
+                                                    style="color: #ededed; text-decoration: none"
+                                                    target="_blank"
+                                            >royaljewelry.com</a
+                                            >
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="padding: 0; width: 40%" align="right">
+                                    <table
+                                            role="presentation"
+                                            style="
+                          border-collapse: collapse;
+                          border: 0;
+                          border-spacing: 0;
+                        "
+                                    >
+                                        <tr>
+                                            <td style="padding: 0 5px">
+                                                <a
+                                                        href="http://www.facebook.com/"
+                                                        style="color: #ffffff"
+                                                ><img
+                                                        src="https://res.cloudinary.com/dcnrv9qjs/image/upload/v1722135003/image_form_editor/facebook_mkmyhz.png"
+                                                        alt="Facebook"
+                                                        width="38"
+                                                        style="height: auto; display: block; border: 0"
+                                                /></a>
+                                            </td>
+                                            <td style="padding: 0 5px">
+                                                <a
+                                                        href="http://www.telegram.com/"
+                                                        style="color: #ffffff"
+                                                ><img
+                                                        src="https://res.cloudinary.com/dcnrv9qjs/image/upload/v1722135003/image_form_editor/telegram_vcaube.png"
+                                                        alt="Telegram"
+                                                        width="38"
+                                                        style="
+                                  height: auto;
+                                  display: block;
+                                  border: 0;
+                                  color: #ffffff;
+                                "
+                                                /></a>
+                                            </td>
+                                            <td style="padding: 0 5px">
+                                                <a
+                                                        href="https://zalo.me/g/qwbquv179"
+                                                        target="_blank"
+                                                        style="color: #ffffff"
+                                                ><img
+                                                        src="https://res.cloudinary.com/dcnrv9qjs/image/upload/v1722135003/image_form_editor/zalo_ccs5hd.png"
+                                                        alt="Zalo"
+                                                        width="38"
+                                                        style="
+                                  height: auto;
+                                  display: block;
+                                  border: 0;
+                                  color: #ffffff;
+                                "
+                                                /></a>
+                                            </td>
+                                            <td style="padding: 0 5px">
+                                                <a
+                                                        href="https://zalo.me/g/nrzrjt134"
+                                                        target="_blank"
+                                                        style="color: #ffffff"
+                                                ><img
+                                                        src="https://res.cloudinary.com/dcnrv9qjs/image/upload/v1722135003/image_form_editor/zalo_ccs5hd.png"
+                                                        alt="Zalo"
+                                                        width="38"
+                                                        style="
+                                  height: auto;
+                                  display: block;
+                                  border: 0;
+                                  color: #ffffff;
+                                "
+                                                /></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <div
+                                style="
+                    font-size: 13px;
+                    margin-top: 20px;
+                    text-align: center;
+                    color: white;
+                    font-weight: 500;
+                  "
+                        >
+                            Copyright © 2026 - ROYAL JEWELRY
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
