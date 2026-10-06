@@ -1,0 +1,388 @@
+/* Exact Harry Winston High Luxury Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  margin: 0 !important;
+  background: #061129;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 10px 30px rgba(4, 11, 27, 0.9);
+  font-family: "Playfair Display", Georgia, serif;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* 1. Top Utility Bar */
+.topBar {
+  background: #040B1B;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 6px 32px;
+  max-height: 50px;
+  opacity: 1;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.headerScrolled .topBar {
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+  overflow: hidden;
+  border-bottom: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.topBarInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 34px;
+}
+
+.topBarLeft, .topBarRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topBarIconBtn {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  color: #CBD5E1 !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  cursor: pointer;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 0 !important;
+  transition: color 0.3s ease !important;
+  box-shadow: none !important;
+}
+
+.topBarIconBtn:hover {
+  color: #D4AF37 !important;
+}
+
+.topBarLink {
+  color: inherit !important;
+  font-size: 11px !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+}
+
+/* 2. Main Brand Title & Monogram Crest */
+.brandHeaderRow {
+  padding: 16px 0 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.headerScrolled .brandHeaderRow {
+  padding: 4px 0 2px;
+}
+
+.logoLink {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logoText {
+  color: #FFFFFF !important;
+  font-family: "Cinzel", Georgia, serif !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  letter-spacing: 8px !important;
+  margin: 0 !important;
+  text-transform: uppercase !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F3E5AB 70%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.headerScrolled .logoText {
+  font-size: 19px !important;
+  letter-spacing: 4px !important;
+}
+
+.crestDividerWrapper {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  max-height: 40px;
+  opacity: 1;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.headerScrolled .crestDividerWrapper {
+  max-height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.hairline {
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.5) 50%, transparent 100%);
+}
+
+.crestBadge {
+  width: 28px;
+  height: 36px;
+  border: 1.5px solid #D4AF37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cinzel", serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #D4AF37;
+  letter-spacing: 1px;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background: #040B1B;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.35);
+}
+
+/* 3. Main Navigation Row */
+.navRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding-bottom: 12px;
+  flex-wrap: wrap;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.headerScrolled .navRow {
+  padding-bottom: 6px;
+  gap: 22px;
+}
+
+.navTrigger {
+  border: none !important;
+  background: transparent !important;
+  outline: none !important;
+  cursor: pointer;
+  padding: 6px 0 !important;
+  color: #F8FAFC !important;
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-weight: 600 !important;
+  font-size: 12.5px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  position: relative;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: none !important;
+}
+
+.headerScrolled .navTrigger {
+  font-size: 11px !important;
+  letter-spacing: 1.5px !important;
+  padding: 2px 0 !important;
+}
+
+.navTrigger::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1.5px;
+  background: #D4AF37;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navTrigger:hover {
+  color: #F3E5AB !important;
+}
+
+.navTrigger:hover::after {
+  width: 100%;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.loginBtn {
+  background: rgba(212, 175, 55, 0.08) !important;
+  border: 1px solid rgba(212, 175, 55, 0.6) !important;
+  color: #F3E5AB !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  padding: 5px 14px !important;
+  border-radius: 2px !important;
+  cursor: pointer;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  transition: all 0.3s ease !important;
+}
+
+.loginBtn:hover {
+  background: rgba(212, 175, 55, 0.2) !important;
+  border-color: #D4AF37 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.3) !important;
+}
+
+.registerBtn {
+  background: linear-gradient(135deg, #D4AF37 0%, #C5A059 100%) !important;
+  border: 1px solid #D4AF37 !important;
+  color: #040B1B !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  padding: 5px 16px !important;
+  border-radius: 2px !important;
+  cursor: pointer;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3) !important;
+}
+
+.registerBtn:hover {
+  background: #F3E5AB !important;
+  color: #040B1B !important;
+  border-color: #F3E5AB !important;
+  box-shadow: 0 4px 16px rgba(243, 229, 171, 0.5) !important;
+  transform: translateY(-1px);
+}
+
+.profileBtn {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(212, 175, 55, 0.5) !important;
+  color: #FFFFFF !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  padding: 5px 14px !important;
+  border-radius: 20px !important;
+  cursor: pointer;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.profileBtn:hover {
+  border-color: #D4AF37 !important;
+  background: rgba(212, 175, 55, 0.15) !important;
+  color: #F3E5AB !important;
+}
+
+.userIcon {
+  color: #D4AF37 !important;
+  font-size: 14px !important;
+}
+
+.logoutBtn {
+  background: transparent !important;
+  border: none !important;
+  color: #94A3B8 !important;
+  font-size: 16px !important;
+  cursor: pointer;
+  padding: 4px !important;
+  transition: color 0.3s ease !important;
+}
+
+.logoutBtn:hover {
+  color: #EF4444 !important;
+}
+
+.cartWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.cartBtn {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(6, 17, 41, 0.8) 100%) !important;
+  border: 1.5px solid #D4AF37 !important;
+  color: #F3E5AB !important;
+  padding: 5px 16px !important;
+  border-radius: 2px !important;
+  cursor: pointer;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.25) !important;
+}
+
+.cartBtn:hover {
+  background: #D4AF37 !important;
+  color: #040B1B !important;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.5) !important;
+}
+
+.cartBtn:hover .cartIcon,
+.cartBtn:hover .cartLabel {
+  color: #040B1B !important;
+}
+
+.cartIcon {
+  font-size: 18px !important;
+  color: #D4AF37 !important;
+  transition: color 0.3s ease !important;
+}
+
+.cartLabel {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  color: #F3E5AB !important;
+  transition: color 0.3s ease !important;
+}
+
+.adminButton {
+  background: #D4AF37 !important;
+  border: 1px solid #D4AF37 !important;
+  color: #040B1B !important;
+  font-weight: 700 !important;
+  border-radius: 0 !important;
+  font-family: "Cinzel", serif !important;
+}
+
+@media (max-width: 992px) {
+  .logoText { font-size: 24px !important; letter-spacing: 4px !important; }
+  .navRow { gap: 16px; flex-wrap: wrap; }
+  .navTrigger { font-size: 11px !important; letter-spacing: 1px !important; }
+}

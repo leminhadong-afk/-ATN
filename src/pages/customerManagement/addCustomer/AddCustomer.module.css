@@ -1,0 +1,12 @@
+.FormAddCustomer{
+  background-color: aliceblue;
+  border-radius: 10%;
+  margin: 20px;
+  padding: 10px;
+  }
+  
+  .SubmitContainer{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }

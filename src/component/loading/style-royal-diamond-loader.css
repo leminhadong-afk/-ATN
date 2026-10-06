@@ -1,0 +1,161 @@
+/* style-royal-diamond-loader.css - Royal Diamond High Luxury Loading Overlay */
+
+.royalLoaderOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: radial-gradient(circle at center, #0B1736 0%, #040B1B 80%);
+  backdrop-filter: blur(16px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cinzel", "Playfair Display", Georgia, serif;
+  color: #F8FAFC;
+  animation: fadeInOverlay 0.4s ease-out;
+}
+
+@keyframes fadeInOverlay {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.royalDiamondContainer {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+/* Outer Pulsing Gold Aura Ring */
+.royalAuraRing {
+  position: absolute;
+  inset: -10px;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  animation: auraPulse 3s infinite ease-in-out;
+}
+
+@keyframes auraPulse {
+  0%, 100% {
+    transform: scale(0.95);
+    opacity: 0.3;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.8;
+    box-shadow: 0 0 45px rgba(212, 175, 55, 0.4);
+  }
+}
+
+/* Rotating Octagon Emerald-Cut Frame */
+.royalDiamondSvg {
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(0 0 16px rgba(212, 175, 55, 0.5));
+  animation: diamondRotate 12s linear infinite;
+}
+
+@keyframes diamondRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Central RJ Monogram Emblem */
+.royalMonogramCenter {
+  position: absolute;
+  font-family: "Cinzel", serif;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #F3E5AB;
+  text-shadow: 0 0 12px rgba(212, 175, 55, 0.8);
+  animation: logoGlow 2s infinite alternate ease-in-out;
+}
+
+@keyframes logoGlow {
+  0% { opacity: 0.7; transform: scale(0.96); }
+  100% { opacity: 1; transform: scale(1.05); }
+}
+
+/* Sparkling Diamonds Flares */
+.sparkleStar {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #FFFFFF;
+  clip-path: polygon(50% 0%, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0% 50%, 35% 35%);
+  filter: drop-shadow(0 0 6px #F3E5AB);
+  animation: sparkleTwinkle 1.8s infinite ease-in-out;
+}
+
+.starTopRight {
+  top: 10px;
+  right: 15px;
+  animation-delay: 0.2s;
+}
+
+.starBottomLeft {
+  bottom: 12px;
+  left: 12px;
+  animation-delay: 0.9s;
+}
+
+@keyframes sparkleTwinkle {
+  0%, 100% { transform: scale(0) rotate(0deg); opacity: 0; }
+  50% { transform: scale(1.4) rotate(90deg); opacity: 1; }
+}
+
+/* Brand Text Section */
+.royalBrandTitle {
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 0 6px 0;
+  text-align: center;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F3E5AB 60%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.royalSubtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #C5A059;
+  margin-bottom: 24px;
+}
+
+/* Sweeping Gold Hairline Progress Bar */
+.royalProgressWrapper {
+  width: 180px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.royalProgressBar {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, #D4AF37 50%, transparent 100%);
+  animation: sweepProgress 1.6s infinite ease-in-out;
+}
+
+@keyframes sweepProgress {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}

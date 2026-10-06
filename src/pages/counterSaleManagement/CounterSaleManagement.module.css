@@ -1,0 +1,461 @@
+/* Counter Sale Management - Premium POS Theme */
+
+.Container {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+}
+
+.HeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.HeaderContainer h1 {
+  font-weight: 800;
+  color: #1a365d;
+  margin: 0;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ButtonAdd {
+  background: linear-gradient(135deg, #1a365d 0%, #3182ce 100%);
+  border: none;
+  border-radius: 12px;
+  color: #ffffff;
+  padding: 10px 24px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ButtonAdd:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(26, 54, 93, 0.35);
+  background: linear-gradient(135deg, #1a365d 0%, #2a4365 100%);
+  color: #ffffff !important;
+}
+
+.ButtonAdd:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* POS Layout Grid */
+.POSLayout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 8px;
+  background: #f8fafc;
+  min-height: 70vh;
+}
+
+.CartSection {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+}
+
+.CheckoutSidebar {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 20px;
+}
+
+.SectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.CartTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Cart Items */
+.ProductList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.CartItem {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 16px;
+  transition: all 0.2s ease;
+}
+
+.CartItem:hover {
+  border-color: #3182ce;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.CartItemImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+}
+
+.CartItemImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.CartItemInfo {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.ProductName {
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.ProductSpecs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.ProductPrice {
+  font-weight: 600;
+  color: #1a365d;
+}
+
+.CartItemActions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.QuantityControl {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f8fafc;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.QuantityControl:hover {
+  background: #ffffff;
+  border-color: #3182ce;
+  box-shadow: 0 2px 8px rgba(49, 130, 206, 0.1);
+}
+
+.QuantityControl button {
+  transition: all 0.2s ease !important;
+}
+
+.QuantityControl button:hover {
+  transform: scale(1.2);
+  background: #3182ce !important;
+  color: white !important;
+  border-color: #3182ce !important;
+}
+
+.QuantityValue {
+  font-weight: 700;
+  color: #1e293b;
+  min-width: 20px;
+  text-align: center;
+}
+
+.ItemTotal {
+  font-weight: 800;
+  color: #1a365d;
+  min-width: 110px;
+  text-align: right;
+}
+
+.MiniAddBtn {
+  width: 32px !important;
+  height: 32px !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 8px !important;
+  background: #3182ce !important;
+  border: none !important;
+  color: #ffffff !important;
+}
+
+.MiniAddBtn:hover {
+  background: #1a365d !important;
+  transform: scale(1.1);
+}
+
+/* Sidebar Cards */
+.SidebarCard {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+}
+
+.CardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.CardHeader h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Customer Section */
+.SelectedCustomerInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  background: #f0f7ff;
+  border-radius: 16px;
+  border: 1px solid #dbeafe;
+}
+
+.CustomerAvatar {
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.CustomerName {
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 15px;
+}
+
+.CustomerPhone {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.CustomerSelect {
+  width: 100% !important;
+}
+
+.RetailGuest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.DeliverySwitch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* Order Summary */
+.OrderSummaryTable {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.SummaryRow {
+  display: flex;
+  justify-content: space-between;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.DiscountValue {
+  color: #e53e3e;
+  font-weight: 600;
+}
+
+.TotalRow {
+  margin-top: 12px;
+  padding-top: 16px;
+  border-top: 2px solid #f1f5f9;
+  color: #1e293b;
+  font-weight: 700;
+}
+
+.FinalAmount {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a365d;
+}
+
+.PaymentMethodBox {
+  margin: 20px 0;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.MethodTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.PaymentMethodBtn {
+  height: 52px !important;
+  border-radius: 12px !important;
+  font-weight: 700 !important;
+  color: #1a365d !important;
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.PaymentMethodBtn:hover {
+  border-color: #3182ce !important;
+  background: #f0f7ff !important;
+  color: #2b6cb0 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(49, 130, 206, 0.15);
+}
+
+.CheckoutBtn {
+  height: 58px !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%) !important;
+  border: none !important;
+  color: #ffffff !important;
+  box-shadow: 0 8px 20px rgba(30, 58, 138, 0.25) !important;
+  margin-top: 12px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.CheckoutBtn:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 28px rgba(30, 58, 138, 0.4) !important;
+  background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%) !important;
+  color: #ffffff !important;
+}
+
+.CheckoutBtn:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+/* Responsive sidebar */
+@media (max-width: 1300px) {
+  .POSLayout {
+    flex-direction: column;
+  }
+  .CheckoutSidebar {
+    width: 100%;
+    position: static;
+  }
+}
+
+/* Utils */
+.LoadingState {
+  padding: 60px;
+  text-align: center;
+  color: #64748b;
+}
+
+.EmptyCart {
+  padding: 100px 0;
+}
+
+/* Ant overrides */
+:global(.ant-tabs-nav) {
+  margin-bottom: 0 !important;
+  padding: 0 20px !important;
+  background: #ffffff;
+}
+
+:global(.ant-tabs-tab) {
+  margin-bottom: -1px !important;
+  border-bottom: none !important;
+}
+
+:global(.ant-tabs-content-holder) {
+  background: #f8fafc;
+}
+
+/* Global Button Fixes to prevent white-on-white */
+:global(.ant-btn-primary) {
+  color: #ffffff !important;
+}
+
+:global(.ant-btn-primary:hover) {
+  color: #ffffff !important;
+}
+
+:global(.ant-btn-default:hover) {
+  color: #1a365d !important;
+  border-color: #1a365d !important;
+}
+
+:global(.ant-tabs-nav-add) {
+  background: #ecf2f7 !important;
+  border: 1px solid #dbeafe !important;
+  color: #1a365d !important;
+}
+
+:global(.ant-tabs-nav-add:hover) {
+  background: #1a365d !important;
+  color: #ffffff !important;
+}

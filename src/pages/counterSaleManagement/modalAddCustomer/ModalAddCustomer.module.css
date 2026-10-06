@@ -1,0 +1,63 @@
+/* Modal Add Customer - Navy Theme */
+
+.formContainer {
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.formItem {
+  margin-bottom: 20px;
+}
+
+.inputField {
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 10px 16px;
+  transition: all 0.3s ease;
+}
+
+.inputField:hover,
+.inputField:focus {
+  border-color: #1a365d;
+  box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1);
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.submitButton {
+  background: linear-gradient(135deg, #1a365d 0%, #3182ce 100%);
+  border: none;
+  border-radius: 12px;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 10px 24px;
+  box-shadow: 0 4px 12px rgba(26, 54, 93, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submitButton:hover {
+  background: linear-gradient(135deg, #2a4365 0%, #1a365d 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(26, 54, 93, 0.4);
+}
+
+.cancelButton {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  color: #475569;
+  font-weight: 600;
+  padding: 10px 24px;
+  transition: all 0.3s ease;
+}
+
+.cancelButton:hover {
+  border-color: #1a365d;
+  color: #1a365d;
+  background: #f8fafc;
+}

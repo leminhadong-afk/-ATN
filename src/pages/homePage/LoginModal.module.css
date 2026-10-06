@@ -1,0 +1,110 @@
+.loginModal {
+  animation: modalFadeIn 0.3s ease-in-out;
+}
+
+.modalTitle {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.modalTitle h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+}
+
+.formContainer {
+  padding: 0 24px;
+}
+
+.loginForm {
+  max-width: 100%;
+}
+
+.inputField {
+  border-radius: 8px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+
+.inputField:hover {
+  border-color: #1a365d;
+}
+
+.inputField:focus {
+  border-color: #1a365d;
+  box-shadow: 0 0 0 2px rgba(26, 54, 93, 0.2);
+}
+
+.formActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.registerLink {
+  background: none;
+  border: none;
+  color: #1a365d;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.registerLink:hover {
+  color: #2a4365;
+  text-decoration: underline;
+}
+
+.submitButton {
+  min-width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(26, 54, 93, 0.15);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .formActions {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+
+  .registerLink {
+    text-align: center;
+  }
+
+  .modalTitle h2 {
+    font-size: 24px;
+  }
+} 

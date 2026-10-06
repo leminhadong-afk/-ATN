@@ -1,0 +1,29 @@
+
+@keyframes blink {
+  0% {
+    color: #1976d2;
+    text-shadow: none;
+  }
+  50% {
+    color: #2196f3;
+    text-shadow: 0 2px 8px #90caf9;
+  }
+  100% {
+    color: #1976d2;
+    text-shadow: none;
+  }
+}
+
+.digital-services {
+  text-decoration: underline;
+  animation: blink 2s infinite;
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.dark-mode .digital-services {
+  text-decoration: underline;
+  animation: blink 2s infinite;
+  font-weight: bold;
+  color: #90caf9;
+}

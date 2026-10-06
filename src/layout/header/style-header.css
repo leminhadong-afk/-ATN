@@ -1,0 +1,63 @@
+
+.ant-layout-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 99 !important;
+  background: linear-gradient(135deg, #0B132B 0%, #1C2541 60%, #1A0A2A 100%) !important;
+  box-shadow: 0 4px 20px rgba(11, 19, 43, 0.5) !important;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3) !important;
+}
+
+.img_avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #D4AF37;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
+}
+
+.title_logo {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  color: #FFF8E7;
+  font-weight: bold;
+  margin-right: 50px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+}
+
+.header-brand-clean-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #D4AF37;
+  transition: all 0.2s ease;
+}
+
+.header-brand-clean:hover .header-brand-clean-title {
+  color: #FFE082;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+.logo_project {
+  width: 50px;
+}
+
+.dark-mode .date-dashboard-text {
+  color: rgb(255, 255, 255) !important;
+}
+
+.dark-mode .date-dashboard-text-1 {
+  color: rgb(255, 255, 255) !important;
+}
+
+.dark-mode .date-dashboard-text-2 {
+  color: rgb(255, 255, 255) !important;
+}

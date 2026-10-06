@@ -1,0 +1,112 @@
+/* harryWinstonTheme.css - Exact Harry Winston High Luxury Design System with Vietnamese Font Support */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --hw-bg-dark: #061129;
+  --hw-bg-navy: #0A193B;
+  --hw-bg-cream: #FAF9F5;
+  --hw-bg-white: #FFFFFF;
+  
+  --hw-gold-primary: #D4AF37;
+  --hw-gold-light: #F3E5AB;
+  --hw-gold-champagne: #C5A059;
+  --hw-gold-dark: #9A7B31;
+  
+  --hw-text-heading: #061129;
+  --hw-text-body: #2C3E50;
+  --hw-text-muted: #64748B;
+  --hw-text-light: #F8FAFC;
+  
+  --hw-font-serif: 'Playfair Display', Georgia, serif;
+  --hw-font-display: 'Playfair Display', Georgia, serif;
+  --hw-font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  --hw-shadow-sm: 0 4px 14px rgba(6, 17, 41, 0.06);
+  --hw-shadow-md: 0 10px 30px rgba(6, 17, 41, 0.1);
+  --hw-shadow-gold: 0 8px 24px rgba(212, 175, 55, 0.3);
+  
+  --hw-transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Global Font & Theme overrides for Client */
+.hw-theme-client {
+  font-family: var(--hw-font-sans);
+  color: var(--hw-text-body);
+  background-color: var(--hw-bg-cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+.hw-heading-display {
+  font-family: var(--hw-font-display);
+  color: var(--hw-text-heading);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hw-heading-serif {
+  font-family: var(--hw-font-serif);
+  color: var(--hw-text-heading);
+}
+
+.hw-gold-gradient-text {
+  background: linear-gradient(135deg, #0B132B 0%, #D4AF37 50%, #B8860B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hw-btn-luxury {
+  font-family: var(--hw-font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 14px 36px;
+  background: var(--hw-bg-dark);
+  color: #FFF8E7 !important;
+  border: 1px solid var(--hw-gold-primary);
+  border-radius: 0px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: var(--hw-transition-smooth);
+  box-shadow: 0 4px 15px rgba(11, 19, 43, 0.2);
+  text-decoration: none;
+}
+
+.hw-btn-luxury:hover {
+  background: var(--hw-gold-primary);
+  color: #0B132B !important;
+  box-shadow: var(--hw-shadow-gold);
+  transform: translateY(-2px);
+}
+
+.hw-btn-luxury-outline {
+  font-family: var(--hw-font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 13px 32px;
+  background: transparent;
+  color: #0B132B !important;
+  border: 1.5px solid #0B132B;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: var(--hw-transition-smooth);
+  text-decoration: none;
+}
+
+.hw-btn-luxury-outline:hover {
+  background: #0B132B;
+  color: #FFF8E7 !important;
+  border-color: #0B132B;
+}
+
+.hw-divider-gold {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #D4AF37 50%, transparent 100%);
+  margin: 20px auto;
+}

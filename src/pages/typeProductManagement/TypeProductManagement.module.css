@@ -1,0 +1,115 @@
+.TypeProductContainer {
+  padding: 32px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.headerTypeProductContainer {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+}
+
+.headerTypeProductContainer h1 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1a365d;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.TypeProductSearch {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 32px;
+  align-items: center;
+  gap: 24px;
+  background: #ffffff;
+  border-radius: 20px 20px 0 0;
+  border: 1px solid #f1f5f9;
+  border-bottom: none;
+}
+
+.inputSearch :global(.ant-input) {
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.inputSearch :global(.ant-input:hover),
+.inputSearch :global(.ant-input:focus) {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.btnAddTypeProduct {
+  height: 48px !important;
+  padding: 0 32px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  border-radius: 12px !important;
+  background: linear-gradient(135deg, #1a365d 0%, #3182ce 100%) !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2) !important;
+}
+
+.btnAddTypeProduct:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 16px rgba(26, 54, 93, 0.3) !important;
+  color: white !important;
+}
+
+.tableCard {
+  background: #ffffff;
+  border-radius: 0 0 20px 20px;
+  padding: 0 32px 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+  border-top: none;
+}
+
+.largeTag {
+  font-size: 13px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  border: 2px solid !important;
+}
+
+/* Table styling */
+.tableCard :global(.ant-table-thead > tr > th) {
+  background: #f8fafc !important;
+  color: #1e293b !important;
+  font-weight: 700 !important;
+  padding: 18px !important;
+  border-bottom: 2px solid #e2e8f0 !important;
+}
+
+.tableCard :global(.ant-table-tbody > tr > td) {
+  color: #475569 !important;
+  font-weight: 500;
+  padding: 18px !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+}
+
+.tableCard :global(.ant-table-tbody > tr:hover > td) {
+  background: #f0f7ff !important;
+}
+
+.tableCard :global(.ant-pagination-item-active) {
+  background: #1a365d !important;
+  border-color: #1a365d !important;
+}
+
+.tableCard :global(.ant-pagination-item-active a) {
+  color: white !important;
+}
+
+.tableCard :global(.ant-btn) {
+  border-radius: 10px;
+  font-weight: 600;
+}

@@ -1,0 +1,78 @@
+.modalDetailContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.imgContainer {
+  width: 150px;
+  height: 150px;
+  background: #f8fafc;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.imgContainer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(26, 54, 93, 0.1);
+  border-color: #3182ce;
+}
+
+.selectContainerLeft,
+.selectContainerRight {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+  max-width: 40%;
+}
+
+.selectContainer {
+  width: 100%;
+}
+
+/* Global Ant Design overrides for modal */
+.modalDetailContainer :global(.ant-select-selector) {
+  border-radius: 10px !important;
+  border: 1px solid #e2e8f0 !important;
+  transition: all 0.3s ease !important;
+}
+
+.modalDetailContainer :global(.ant-select-selector:hover) {
+  border-color: #3182ce !important;
+}
+
+.modalDetailContainer :global(.ant-select-focused .ant-select-selector) {
+  border-color: #3182ce !important;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1) !important;
+}
+
+.modalDetailContainer :global(.ant-form-item-label > label) {
+  color: #1e293b !important;
+  font-weight: 600 !important;
+}
+
+.modalDetailContainer :global(.ant-input-number) {
+  border-radius: 10px !important;
+  border: 1px solid #e2e8f0 !important;
+  width: 100% !important;
+}
+
+.modalDetailContainer :global(.ant-input-number:hover) {
+  border-color: #3182ce !important;
+}
+
+.modalDetailContainer :global(.ant-input-number-focused) {
+  border-color: #3182ce !important;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1) !important;
+}

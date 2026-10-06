@@ -1,0 +1,119 @@
+.containerSearch {
+  background: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eef2f6;
+}
+
+.modalContentWrapper {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inputSearch {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.selectSearch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.selectSearch > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.selectSearch label {
+  font-weight: 600;
+  color: #1a365d;
+  font-size: 13px;
+}
+
+.selectSearch :global(.ant-select) {
+  width: 160px !important;
+}
+
+.ButtonSearch {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.chooseButton {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Global overrides for ModalAddProduct context */
+:global(.ant-modal-header) {
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+:global(.ant-modal-title) {
+  color: #1a365d !important;
+  font-weight: 800 !important;
+  font-size: 20px !important;
+}
+
+:global(.ant-btn-primary) {
+  background-color: #1a365d !important;
+  border-color: #1a365d !important;
+  box-shadow: 0 4px 10px rgba(26, 54, 93, 0.2);
+}
+
+:global(.ant-btn-primary:hover) {
+  background-color: #2a4365 !important;
+  border-color: #2a4365 !important;
+  transform: translateY(-1px);
+}
+
+:global(.ant-slider-track) {
+  background-color: #1a365d !important;
+}
+
+:global(.ant-slider-handle::after) {
+  box-shadow: 0 0 0 2px #1a365d !important;
+}
+
+:global(.ant-table-thead > tr > th) {
+  background: #f8fafc !important;
+  color: #1a365d !important;
+  font-weight: 700 !important;
+  border-bottom: 2px solid #e2e8f0 !important;
+}
+
+:global(.ant-table-row:hover > td) {
+  background: #f0f7ff !important;
+}
+
+:global(.ant-pagination-simple-pager input) {
+  border-color: #1a365d !important;
+}
+
+:global(.ant-input:focus), :global(.ant-input-focused) {
+  border-color: #1a365d !important;
+  box-shadow: 0 0 0 2px rgba(26, 54, 93, 0.1) !important;
+}
+
+:global(.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector) {
+  border-color: #1a365d !important;
+  box-shadow: 0 0 0 2px rgba(26, 54, 93, 0.1) !important;
+}

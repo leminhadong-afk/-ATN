@@ -1,0 +1,70 @@
+/* Modal Confirm Add Product Bill - ROYAL JEWELRY Theme */
+
+.Container {
+  padding: 24px;
+  margin: 10px 0;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Container:hover {
+  box-shadow: 0 6px 20px rgba(212, 163, 115, 0.18);
+  transform: translateY(-2px);
+}
+
+.ContainerItems {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.BillDetailImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(212, 163, 115, 0.2);
+  object-fit: cover;
+  border: 2px solid rgba(212, 163, 115, 0.2);
+  transition: all 0.3s ease;
+}
+
+.BillDetailImg:hover {
+  transform: scale(1.05);
+  border-color: #1a365d;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.BillDetailItems {
+  flex: 1;
+  padding: 0 20px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.BillDetailQuantity {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  color: #047857;
+  border-radius: 12px;
+  font-weight: 700;
+  border: 2px solid #86efac;
+  margin: 0 12px;
+}
+
+.BillDetailTotal {
+  font-weight: 800;
+  font-size: 18px;
+  color: #1a365d;
+  padding: 8px 16px;
+  border-radius: 12px;
+  background-color: rgba(26, 54, 93, 0.1);
+}
+

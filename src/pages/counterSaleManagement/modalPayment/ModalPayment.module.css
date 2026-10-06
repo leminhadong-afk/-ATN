@@ -1,0 +1,70 @@
+.TotalAmount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+.TotalAmountDue {
+  font-weight: 800;
+  font-size: 20px;
+  color: #1a365d;
+}
+
+.MethodPayment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.MethodPaymentItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  min-width: 150px;
+  height: 48px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.MethodPaymentItem:hover {
+  border-color: #1a365d;
+  background: #f8fafc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.MethodPaymentItem.selected {
+  background: linear-gradient(135deg, #1a365d 0%, #3182ce 100%);
+  border-color: #1a365d;
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(26, 54, 93, 0.3);
+}
+
+.SelectedMethodContainer {
+  margin-top: 24px;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.TransactionCodeInput {
+  margin-bottom: 24px;
+}
+
+.TransferSwitch {
+  margin: 16px 0;
+}

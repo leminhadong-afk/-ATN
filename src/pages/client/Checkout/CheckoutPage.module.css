@@ -1,0 +1,405 @@
+.layout {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fffbfa 0%, #f9f0e8 100%);
+  color: var(--secondary-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 205px 24px 80px;
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 165px 20px 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 145px 16px 40px;
+  }
+}
+
+.pageTitle {
+  font-family: var(--font-header);
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(45deg, var(--secondary-color) 30%, var(--primary-color) 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.02em;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.cardTitle {
+  font-family: var(--font-header);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--secondary-color);
+}
+
+.cardTitle::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 24px;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+.formSection {
+  margin-top: 24px;
+}
+
+.paymentOption {
+  border: 1px solid #f0e6d2;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.paymentOption:hover {
+  border-color: var(--primary-color);
+  background: #fffdf9;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.1);
+}
+
+.radioCustom {
+  width: 100%;
+}
+
+.paymentContent {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.completeButton {
+  height: 64px !important;
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  background: linear-gradient(45deg, #2c2c2c, #4a4a4a) !important;
+  border: none !important;
+  color: white !important;
+  margin-top: 20px;
+  border-radius: 12px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.completeButton:hover {
+  background: linear-gradient(45deg, var(--primary-color), var(--primary-hover)) !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+}
+
+.summaryCard {
+  background: white;
+  border: 1px solid #f0e6d2;
+  border-radius: 20px;
+  padding: 30px;
+  position: sticky;
+  top: 140px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+}
+
+.summaryHeader {
+  font-family: var(--font-header);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+  border-bottom: 1px solid #f0e6d2;
+  padding-bottom: 16px;
+}
+
+.summaryItem {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #efe1c8;
+}
+
+.summaryImage {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #f0e6d2;
+}
+
+.itemInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemPrice {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.costBreakdown {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.costRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-muted);
+}
+
+.costRow b {
+  color: var(--secondary-color);
+}
+
+.totalSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  margin-top: 24px;
+  border-top: 2px solid var(--secondary-color);
+}
+
+.totalLabel {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.totalAmount {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+
+.discountSection {
+  margin-top: 24px;
+  background: #fdfaf5;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px dashed var(--primary-color);
+}
+
+.discountInput {
+  border-radius: 8px !important;
+  border: 1px solid #d4af3733 !important;
+}
+
+.discountBtn {
+  background: var(--primary-color) !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+}
+
+@media (max-width: 992px) {
+  .summaryCard {
+    position: relative;
+    top: 0;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 100px 16px 40px;
+  }
+  .card {
+    padding: 24px;
+  }
+  .pageTitle {
+    font-size: 2rem;
+  }
+}
+
+/* Custom styles for Ant Design overrites */
+:global(.ant-input), :global(.ant-input-affix-wrapper), :global(.ant-input-textarea) {
+  padding: 12px 16px !important;
+  border-radius: 10px !important;
+  border: 1px solid #e5e7eb !important;
+  transition: all 0.3s ease !important;
+}
+
+:global(.ant-input:focus), :global(.ant-input-affix-wrapper-focused) {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.1) !important;
+}
+
+:global(.ant-form-item-label label) {
+  font-weight: 600 !important;
+  color: var(--secondary-color) !important;
+  font-size: 0.95rem !important;
+}
+
+/* Success Page Specific Styles */
+.successContainer {
+  max-width: 800px;
+  margin: 160px auto 100px;
+  text-align: center;
+  padding: 60px 40px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+}
+
+.successIcon {
+  width: 100px;
+  height: 100px;
+  background: #f0fff4;
+  color: #38a169;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+  font-size: 40px;
+  animation: scaleUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.successTitle {
+  font-family: var(--font-header);
+  font-size: 2.5rem;
+  margin-bottom: 16px !important;
+  color: var(--secondary-color);
+}
+
+.successText {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.orderNumber {
+  display: inline-block;
+  background: #fdfaf5;
+  border: 1px solid #f0e6d2;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  height: 54px !important;
+  padding: 0 32px !important;
+  border-radius: 12px !important;
+  background: var(--secondary-color) !important;
+  font-weight: 600 !important;
+  border: none !important;
+}
+
+.btnOutline {
+  height: 54px !important;
+  padding: 0 32px !important;
+  border-radius: 12px !important;
+  border: 2px solid #e5e7eb !important;
+  font-weight: 600 !important;
+  color: var(--secondary-color) !important;
+  background: transparent !important;
+}
+
+.failedIcon {
+  width: 100px;
+  height: 100px;
+  background: #fef2f2;
+  color: #dc2626;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+  font-size: 40px;
+  animation: scaleUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.failedTitle {
+  font-family: var(--font-header);
+  font-size: 2.5rem;
+  margin-bottom: 16px !important;
+  color: #991b1b;
+}
+
+.cancelBadge {
+  display: inline-block;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  color: #dc2626;
+  margin-bottom: 30px;
+}
+
+.btnPrimaryDanger {
+  height: 54px !important;
+  padding: 0 32px !important;
+  border-radius: 12px !important;
+  background: #dc2626 !important;
+  font-weight: 600 !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.btnPrimaryDanger:hover {
+  background: #b91c1c !important;
+}
+

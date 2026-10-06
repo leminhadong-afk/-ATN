@@ -1,0 +1,202 @@
+.FormAddEmployee{
+    background-color: aliceblue;
+    border-radius: 10%;
+    margin: 20px;
+    padding: 10px;
+    }
+    
+    .SubmitContainer{
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+    }
+
+.registerModal {
+  animation: modalFadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
+}
+
+.registerModal :global(.ant-modal-content) {
+  animation: modalContentFadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
+}
+
+.registerModal :global(.ant-modal-mask) {
+  animation: modalMaskFadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity;
+}
+
+.modalTitle {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.modalTitle h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+}
+
+.formContainer {
+  padding: 0 24px;
+}
+
+.employeeForm {
+  max-width: 100%;
+}
+
+.inputField {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.inputField:hover {
+  border-color: #1a365d;
+}
+
+.inputField:focus {
+  border-color: #1a365d;
+  box-shadow: 0 0 0 2px rgba(26, 54, 93, 0.2);
+}
+
+.datePicker {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.selectField {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.formActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.loginLink {
+  background: none;
+  border: none;
+  color: #1a365d;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.loginLink:hover {
+  color: #2a4365;
+  text-decoration: underline;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.submitButton {
+  min-width: 160px;
+  height: 40px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(26, 54, 93, 0.15);
+}
+
+.cancelButton {
+  min-width: 160px;
+  height: 40px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.switchText {
+  color: #666;
+  font-size: 14px;
+}
+
+.switchLink {
+  color: #1a365d;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.switchLink:hover {
+  color: #2a4365;
+  text-decoration: underline;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes modalContentFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes modalMaskFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .actionButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .submitButton,
+  .cancelButton {
+    width: 100%;
+  }
+
+  .formActions {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+
+  .loginLink {
+    text-align: center;
+  }
+
+  .modalTitle h2 {
+    font-size: 20px;
+  }
+}

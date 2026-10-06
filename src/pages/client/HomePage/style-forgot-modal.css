@@ -1,0 +1,47 @@
+/* Beautiful styles for forgot password modal */
+.forgotModal {
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  background: #fff;
+}
+
+.forgotForm {
+  padding: 32px 24px 16px 24px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.forgotTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.forgotButton {
+  background: linear-gradient(90deg, #1a365d 0%, #2a4365 100%);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(26, 54, 93, 0.08);
+  transition: background 0.2s;
+  width: 100%;
+  margin-top: 8px;
+}
+.forgotButton:hover {
+  background: linear-gradient(90deg, #2a4365 0%, #1a365d 100%);
+}
+
+.forgotInput {
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  padding: 8px 12px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+.forgotInput:focus {
+  border-color: #1a365d;
+}

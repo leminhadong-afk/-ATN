@@ -1,0 +1,275 @@
+/* Base styling */
+.pageWrapper {
+  background: #f8fafc;
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.pageTitle {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1a365d;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: -0.02em;
+}
+
+.pageIcon {
+  font-size: 24px;
+  color: #1a365d;
+}
+
+/* Card styling */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 24px;
+  border: 1px solid #f1f5f9;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background: #ffffff;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardIcon {
+  color: #3182ce;
+  font-size: 20px;
+}
+
+.cardBody {
+  padding: 32px;
+}
+
+/* Filter section */
+.filterSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.filterRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+}
+
+.searchInputWrapper {
+  flex: 1;
+  min-width: 300px;
+}
+
+.searchInput {
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.searchInput:hover {
+  border-color: #3182ce;
+}
+
+.searchInput:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+/* Date picker */
+.datePickerWrapper {
+  min-width: 350px;
+}
+
+.datePicker {
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+/* Radio group */
+.statusFilter {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.statusLabel {
+  font-weight: 700;
+  color: #1a365d;
+  margin-right: 4px;
+}
+
+.radioGroup {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Action buttons */
+.actionButtonsWrapper {
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+}
+
+/* Buttons styling */
+.addButton, .searchButton {
+  height: 48px;
+  padding: 0 28px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1a365d 0%, #3182ce 100%);
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+  transition: all 0.3s ease;
+}
+
+.addButton:hover, .searchButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(26, 54, 93, 0.3);
+  color: white;
+}
+
+.exportButton {
+  height: 48px;
+  padding: 0 24px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 12px;
+  background: white;
+  border: 1px solid #cbd5e1;
+  color: #1a365d;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.exportButton:hover {
+  background: #f8fafc;
+  border-color: #1a365d;
+  transform: translateY(-1px);
+}
+
+/* Table styling */
+.tableHeader th {
+  background: #f8fafc !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+  padding: 20px !important;
+  border-bottom: 2px solid #e2e8f0 !important;
+}
+
+.tableRow:hover > td {
+  background: #f0f7ff !important;
+}
+
+.tableCell {
+  padding: 18px !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+  color: #475569 !important;
+  font-weight: 500;
+}
+
+.codeCell {
+  font-family: inherit;
+  font-weight: 700;
+  color: #3182ce;
+}
+
+.discountValue {
+  font-weight: 700;
+  color: #1a365d;
+}
+
+/* Status tags */
+.statusTag {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  min-width: 110px;
+  border: 2px solid !important;
+}
+
+/* Action buttons */
+.actionButton {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #1a365d;
+  transition: all 0.3s ease;
+}
+
+.actionButton:hover {
+  background: #f8fafc;
+  border-color: #1a365d;
+  color: #3182ce;
+  transform: translateY(-2px);
+}
+
+/* Pagination */
+.paginationWrapper {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #f1f5f9;
+}
+
+.paginationInfo {
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .filterRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .searchInputWrapper, .datePickerWrapper, .statusFilter, .actionButtonsWrapper {
+    width: 100%;
+  }
+  .actionButtonsWrapper {
+    margin-left: 0;
+    justify-content: flex-end;
+  }
+}
